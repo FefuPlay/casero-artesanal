@@ -1,0 +1,479 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family:'Erase';
+    src: url(fonts/erasdust.ttf);
+}
+
+@font-face{
+    font-family:'Myriad';
+    src: url(fonts/myriad-pro-8.otf);
+}
+
+body{
+    color: black;
+    background: url(img/99.jpg);
+    background-repeat: round;
+    font-size: 16px;
+    font-family: 'Myriad';
+}
+
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+.nav-main{
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin-bottom: 50px;
+    background-color: white;
+}
+
+.nav-brand{
+    width: 50px;
+}
+
+/*NAV LINK*/
+
+.nav-main ul{
+    display: flex;
+    text-align: center;
+}
+
+.nav-main ul li{
+    padding: 10px;
+}
+
+.nav-main ul li a{
+    padding: 10px;
+}
+
+.nav-main ul li a:hover{
+    border-bottom: 2px solid black ;
+}
+
+/*SECCION TITLE*/
+
+.seccion-title {
+    padding-top: 190px;
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Bungee Shade', cursive;
+}
+
+.seccion-title-panmasa {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Bungee Shade', cursive;
+}
+
+.title{
+    background: url(img/adorno-700px.png) no-repeat center;
+    height: 550px;
+}
+
+
+/*PRESENTACION*/
+
+.presentacion{
+    font-size: 100%;
+    height: 400px;
+    width: 100%;
+    background: url(img/Banner\ casero\ web-01.png) no-repeat center center/cover;
+}
+
+/*PRODUCCION*/
+.produccion{
+    display: grid;
+    grid-template-columns:repeat(1, 5fr);
+    gap: 25px;
+    margin: 10px 0;
+    text-align: center;
+    justify-content: center;
+}
+
+.produccion-masa img, video{
+    width: auto;
+    height: 200px;
+    margin-top: 90px;
+ }
+
+.produccion-masa .fondo-img{
+    background: url(img/pizarron.png) no-repeat center;
+    height: 400px;
+    width: auto;
+}
+ 
+ .produccion-masa h2{
+     font-family: 'Erase';
+     color: white;
+ }
+
+/*PRODUCTOS*/
+
+.productos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.productos img, video{
+   width: auto;
+   height: 200px;
+   margin-top: 50px;
+}
+
+.productos .fondo-img{
+    background: url(img/pizarron.png) no-repeat center;
+    height: 400px;
+}
+
+.productos h2{
+    font-size: 25px;
+    margin: 10px 0;
+    font-family: 'Erase';
+    color: white;
+}
+
+/*PRODUCTO-ESTRELLA*/
+
+.producto-estrella{
+    width: 100%;
+    height: 400px;
+    margin: 40px 0;
+    background: url(img/Medialunas.jpg) no-repeat center center/cover;
+} 
+
+.producto-estrella .contenido{
+    color: black;
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+    font-family: 'Myriad';
+}
+
+.fondo-degrade{
+    background-color: #ffffdf40;
+}
+
+.producto-estrella .contenido h2, h3, p{
+    padding: 25px;  
+}
+
+.producto-estrella h3{
+    font-family: 'Erase';
+    font-size: 60px;
+}
+
+.producto-estrella h2{
+    font-size: 40px;
+}
+
+.producto-estrella p{
+    font-size: 20px;
+}
+
+.producto-estrella .contenido p{
+    font-weight: bold;
+}
+
+/*SOCIAL*/
+
+.social{
+    margin: 50px;
+}
+
+.social p{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a{
+    margin: 0 30px;
+}
+
+.links a i{
+    font-size: 3rem;
+}
+
+/*FORMULARIO*/
+
+form{
+	width: 300px;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+    background-color:rgb(153, 134, 134, 0.3);
+    text-align: center;
+}
+
+form input{
+    margin: 10px;
+    text-align: center;
+    border: solid 2px;
+}
+
+form textarea{
+    margin: 10px;
+    text-align: center;
+    border: solid 2px;
+}
+
+form .boton{
+    width: 100px;
+    height: 50px;
+    border: solid black;
+    border-radius: 10px;
+}
+
+.pedido h2{
+    padding: 30px;
+    text-align: center;
+    font-size: 60px;
+} 
+
+.footer{
+    background: rgba(128, 128, 128, 0.4);
+    text-align: center;
+    font-size: 15px;
+}
+
+/*PAN DE MASA MADRE*/
+
+.info{
+    width: auto;
+    height: 500px;
+    background: url(img/pizarra-2.jpg) no-repeat center;
+}
+
+.info p{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 80px;
+    font-family: 'Erase';
+    color: white;
+}
+
+.imagenes{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.imagenes img, video{
+   width: auto;
+   height: 300px;
+   margin-top: 50px;
+}
+
+.imagenes .fondo-img{
+    background: url(img/pizarron.png) no-repeat center;
+    height: 400px;
+}
+
+.pedilo{
+    width: auto;
+    height: 500px;
+    background: url(img/pizarra-2.jpg) no-repeat center;
+}
+
+.pedilo p{
+    text-align: center;
+    font-size: 50px;
+    padding-top: 100px;
+    font-family: 'Erase';
+    color: white;
+}
+
+/*PAN DE MASA MADRE*/
+
+.imagenes-mm{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.imagenes-mm img, video{
+   width: auto;
+   height: 250px;
+   margin-top: 50px;
+}
+
+.imagenes-mm .fondo-img{
+    background: url(img/pizarron.png) no-repeat center;
+    height: 400px;
+}
+
+/*BAGUETTE*/
+
+.imagenes-baguette{
+    display: grid;
+    grid-template-columns: repeat(3, 4fr);
+    gap: 25px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.imagenes-baguette img, video{
+   width: auto;
+   height: 250px;
+   margin-top: 50px;
+}
+
+.imagenes-baguette .fondo-img{
+    background: url(img/pizarron.png) no-repeat center;
+    height: 400px;
+}
+
+/*PAN DE MOLDE*/
+
+.imagenes-molde{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.imagenes-molde img, video{
+   width: auto;
+   height: 300px;
+   margin-top: 50px;
+}
+
+.imagenes-molde .fondo-img{
+    background: url(img/pizarron.png) no-repeat center;
+    height: 400px;
+}
+
+/*HUMMUS*/
+
+.imagenes-hummus{
+    display: grid;
+    grid-template-columns: repeat(2, 4fr);
+    gap: 25px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.imagenes-hummus img, video{
+   width: auto;
+   height: 300px;
+   margin-top: 50px;
+}
+
+.imagenes-hummus .fondo-img{
+    background: url(img/pizarron.png) no-repeat center;
+    height: 400px;
+}
+
+/*MEDIALUNAS*/
+
+.video-medialunas video{
+    width: auto;
+    height: 500px;
+    border: black solid 3px;
+    margin-left: 725px;
+}
+
+/*Amasado*/
+
+.video-amasado video{
+    width: auto;
+    height: 500px;
+    border: black solid 3px;
+    margin-left: 725px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 700px){
+
+    .presentacion{
+        height: 570px;
+        width: 100%;
+        margin-bottom: 10px;
+        background: url(img/CAcero2\ blanco.png) no-repeat center center/cover;
+    }
+    
+.nav-main{
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin-bottom: 50px;
+    background: none;
+}
+
+    .title{
+        background: url(img/adorno-700px.png) no-repeat center;
+        height: 550px;
+    }
+
+    .seccion-title {
+        padding-top: 100px;
+        text-align: center;
+        font-size: 70px;
+    }
+
+    .productos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .productos .fondo-img{
+        height: 350px;
+    }
+
+    .productos h2{
+        font-size: 20px;
+        margin: 5px 0;
+    }
+
+    .producto-estrella .contenido{
+        width: 100%;
+        padding: 5px;
+        text-align: center;
+        font-family: 'Myriad';
+    }
+
+    .producto-estrella .contenido h2, h3, p{
+        padding: 5px;  
+    }
+
+}
